@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Owen Kern">
+  <title>Owen Kern | Posters</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<div class="parallaxPhoto">
+  <div class="navbar">
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="videography.html">Videography</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="textbox">
+    <h1>Owen Kern</h1>
+    <h2>Photography</h2>
+  </div>
+</div>
+
+<body>
+  <div class="info">
+    <h2>Poster Series</h2>
+    <p>I started making posters over the summer of 2019, and plan on continuing the series at a later date. <br />Here are my best posters!</p>
+  </div>
+  <div class="photoselect">
+    <div class="slides">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/piano.png" style="width:50%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/charger.png" style="width:62.5%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/phone.jpg" style="width:50%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/hammer.png" style="width:62.5%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/moon.png" style="width:62.5%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/orb.png" style="width:62.5%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/closeOrb.jpg" style="width:50%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/house.jpg" style="width:62.5%">
+    </div>
+    <div class="slides">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/building.png" style="width:62.5%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="columnother">
+        <img class="demo cursor" src="images/piano.png" style="width:100%" onclick="currentSlide(1)" alt="01">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/charger.png" style="width:100%" onclick="currentSlide(2)" alt="02">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/phone.jpg" style="width:100%" onclick="currentSlide(3)" alt="03">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/hammer.png" style="width:100%" onclick="currentSlide(4)" alt="04">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/moon.png" style="width:100%" onclick="currentSlide(5)" alt="05">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/orb.png" style="width:100%" onclick="currentSlide(6)" alt="06">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/closeOrb.jpg" style="width:100%" onclick="currentSlide(7)" alt="07">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/house.jpg" style="width:100%" onclick="currentSlide(8)" alt="08">
+      </div>
+      <div class="columnother">
+        <img class="demo cursor" src="images/building.png" style="width:100%" onclick="currentSlide(9)" alt="09">
+      </div>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <footer>
+    <h3>Contact Me</h3>
+    <ul>
+      <img src="images/igicon.png">
+      <li><a href="https://www.instagram.com/okern18">Instagram</a></li>
+      <li><a href="mailto:owen@kernkreations.com">Email</a></li>
+    </ul>
+    <hr>
+    <h4>2020 Copyright. All Rights Reserved.</h4>
+  </footer>
+</body>
+
+</html>

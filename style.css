@@ -1,0 +1,513 @@
+* {
+  box-sizing:border-box;
+}
+
+html {
+  font-family: ArcaMajora3-Bold;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Font Size Changes */
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 2.5vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+div {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Text Color Changes on hover */
+.menu li a:hover {
+  color: rgb(70,70,70);
+}
+
+.parallax {
+  background-image: url("images/atl2.png");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Makes the background fit the entire screen */
+.parallax img {
+  max-width: 100%;
+}
+
+.parallaxGame {
+  background-image: url("images/title.png");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Makes the background fit the entire screen */
+.parallaxGame img {
+  max-width: 100%;
+}
+
+.parallaxPhoto {
+  background-image: url("images/caliHills.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Makes the background fit the entire screen */
+.parallaxPhoto img {
+  max-width: 100%;
+}
+
+.parallaxVideo {
+  background-image: url("images/waves.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Makes the background fit the entire screen */
+.parallaxVideo img {
+  max-width: 100%;
+}
+
+/* Decoration for the Navigation Bar */
+.menu li a {
+   text-decoration: none;
+   color: white;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   display: block;
+   padding:0 25px;
+   line-height: 30px;
+   position: relative;
+   font-size: 1.5vw;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.navbar {
+  padding-top: 15px;
+  background-image: linear-gradient(to top, rgba(100,100,100,0), rgba(100,100,100,.5));
+}
+
+nav {
+  padding: 10px 10px 10px 10px;
+  text-align: right;
+  margin: 0 auto;
+  width: calc(100% - 60px);
+}
+
+/* Deco for Name and Description */
+.textbox {
+  color: white;
+  position: absolute;
+  top: 25%;
+  width: 55%;
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-color: black;
+}
+
+.about {
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  background-color: black;
+}
+
+.about img {
+  float: right;
+  height: 20vw;
+  border-radius: 50%;
+  margin-right: 150px;
+}
+
+.info {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+.discover {
+  /* Text positioning */
+  position: relative;
+  text-align: center;
+}
+
+.discover h2 {
+  text-align: center;
+}
+
+.discover li {
+  font-size: 2vw;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.discover li a {
+  text-decoration: none;
+  color: black;
+}
+
+.discover li a:hover {
+  color: rgb(70,70,70);
+}
+
+
+.photoshow {
+  background-color: black;
+
+  /* Set a specific height */
+  height: auto;
+  text-align: center;
+}
+
+.photoshow a {
+  color: white;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.photoshow a h4 {
+  margin: 10px;
+}
+
+.photoshow a img {
+  width: 350px;
+  justify-self: center;
+}
+
+.photoselect {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.photoselect img {
+  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  /* to change the amount of pictures,
+  divide the number by 100,
+  that is your width */
+  width: 25%;
+}
+
+.columnposter {
+  float: left;
+  /* to change the amount of pictures,
+  divide the number by 100,
+  that is your width */
+  width: 10%;
+}
+
+.columnother {
+  float: left;
+  /* to change the amount of pictures,
+  divide the number by 100,
+  that is your width */
+  width: 11.111%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.rendershow {
+  background-color: black;
+
+  /* Set a specific height */
+  height: auto;
+  text-align: center;
+}
+
+.rendershow a {
+  color: white;
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.rendershow h3 {
+  color: white;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.rendershow a h4 {
+  margin: 10px;
+}
+
+.rendershow a img {
+  height: 350px;
+  justify-self: center;
+}
+
+.videoshow {
+  background-color: black;
+  color: white;
+
+  /* Set a specific height */
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.videoshow h3 {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.video {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.videoshow iframe {
+  justify-self: center;
+}
+
+footer {
+  background-color: black;
+  height: 13vw;
+  color: white;
+  text-align: center;
+  padding-top: .05vw;
+}
+
+footer img{
+  height: 1vw;
+}
+
+footer li {
+  display: inline;
+}
+
+footer li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1vw;
+  padding-right: 40px;
+}
+
+footer li a:hover {
+  color: rgb(200,200,200);
+}
+
+
+
+
+
+
+/* Use a media query to add a break point at 768px: */
+/* Everthing beyond this point is changing things for Mobile version */
+@media screen and (max-width:768px) {
+  * {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+/* makes navbar a white bar */
+  .navbar {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+/* makes menu disappear */
+  .menu li {
+    display: block;
+    text-align: center;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  .parallax img {
+    min-height: 500px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  .about img {
+
+  }
+
+  video {
+    width: auto;
+    height: 20vw;
+  }
+
+  footer {
+    height: 110px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+
+  footer li a {
+    font-size: 15px;
+    padding-right: 10px;
+  }
+
+  footer img{
+    height: 15px;
+  }
+
+}
