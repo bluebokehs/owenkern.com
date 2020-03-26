@@ -7,6 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face{
+    font-family:"arca-majora-3-bold";
+    src:url("https://dafonttop.com/wp-data/a/179/8179/file/ArcaMajora3-Bold.otf") format("woff"),
+    url("https://dafonttop.com/wp-data/a/179/8179/file/ArcaMajora3-Bold.otf") format("opentype"),
+    url("https://dafonttop.com/wp-data/a/179/8179/file/ArcaMajora3-Bold.otf") format("truetype");
+}
+
 body, html {
   height: 100%;
   margin: 0;
