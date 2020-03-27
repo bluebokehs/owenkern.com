@@ -159,6 +159,10 @@ nav {
   padding: 20px;
 }
 
+.textbox h2 {
+  font-weight: lighter;
+}
+
 body {
   background-color: black;
 }
