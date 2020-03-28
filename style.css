@@ -507,6 +507,10 @@ footer li a:hover {
 
   }
 
+  .photoselect {
+    width: 80%;
+  }
+
   video {
     width: auto;
     height: 20vw;
