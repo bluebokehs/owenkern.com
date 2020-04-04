@@ -85,7 +85,7 @@ ul {
 }
 
 .parallaxPhoto {
-  background-image: url("images/caliHills.jpg");
+  background-image: url("images/cali3.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -320,6 +320,14 @@ body {
   divide the number by 100,
   that is your width */
   width: 25%;
+}
+
+.columncali {
+  float: left;
+  /* to change the amount of pictures,
+  divide the number by 100,
+  that is your width */
+  width: 6.6667%;
 }
 
 .columnposter {
