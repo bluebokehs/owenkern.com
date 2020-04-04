@@ -493,6 +493,11 @@ footer li a:hover {
     padding: 10px;
   }
 
+  .info p {
+    font-size: 4vw;
+    padding: 10px;
+  }
+
 /* makes navbar a white bar */
   .navbar {
     width: 100%;
