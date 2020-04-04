@@ -330,6 +330,14 @@ body {
   width: 6.6667%;
 }
 
+.columnbeach {
+  float: left;
+  /* to change the amount of pictures,
+  divide the number by 100,
+  that is your width */
+  width: 10%;
+}
+
 .columnposter {
   float: left;
   /* to change the amount of pictures,
