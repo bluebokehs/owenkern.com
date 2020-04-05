@@ -80,6 +80,9 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /* Makes the background fit the entire screen */
@@ -98,6 +101,9 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /* Makes the background fit the entire screen */
@@ -116,6 +122,9 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /* Makes the background fit the entire screen */
@@ -516,6 +525,10 @@ footer li a:hover {
 
   .menu li a {
     font-size: 20px;
+  }
+
+  .parallax img {
+    max-height: 100%;
   }
 
   .parallax img {
