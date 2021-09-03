@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="author" content="Owen Kern">
   <title>Owen Kern | Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -24,17 +25,17 @@
   </div>
   <div class="textbox">
     <h1>Owen Kern</h1>
-    <h2>Creator</h2>
+    <h3>I'm a designer/developer studying CM at Georgia Tech.</h3>
   </div>
 </div>
 
 <body>
-  <div class="about">
+  <div class="about" data-aos="fade-up">
     <h2>About Me</h2>
     <img src="/images/owenkern.jpeg">
     <p>My name is Owen Kern. I am a third year Computational Media major at Georgia Tech. <br />I have been doing all things design and development for years.</p>
   </div>
-  <div class="photoshow">
+  <div class="photoshow" data-aos="fade-up">
     <a href="pages/photography.html"><h4>Photography</h4><img src="images/cali3.jpg"></a>
     <a href="pages/videography.html"><h4>Videography</h4><img src="images/waves.jpg"></a>
     <a href="pages/games.html"><h4>Games</h4><img src="images/land.png"></a>
@@ -47,6 +48,11 @@
       <li><a href="mailto:owen@kernkreations.com">Email</a></li>
     </ul>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
