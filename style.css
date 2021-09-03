@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Avenir", sans-serif;
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
@@ -49,7 +49,7 @@ ul {
 }
 
 .parallax {
-  background-image: url("images/atl2.png");
+  background-image: url("/images/atl2.png");
 
   /* Set a specific height */
   height: 100%;
@@ -70,7 +70,7 @@ ul {
 }
 
 .parallaxGame {
-  background-image: url("images/title.png");
+  background-image: url("/images/title.png");
 
   /* Set a specific height */
   height: 100%;
@@ -91,7 +91,7 @@ ul {
 }
 
 .parallaxPhoto {
-  background-image: url("images/cali3.jpg");
+  background-image: url("/images/cali3.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -112,7 +112,7 @@ ul {
 }
 
 .parallaxVideo {
-  background-image: url("images/waves.jpg");
+  background-image: url("/images/waves.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -266,7 +266,7 @@ body {
   margin: 0 auto;
 }
 
-/* Hide the images by default */
+/* Hide the /images by default */
 .slides {
   display: none;
 }
@@ -374,7 +374,7 @@ body {
   width: 12.5%;
 }
 
-/* Add a transparency effect for thumnbail images */
+/* Add a transparency effect for thumnbail /images */
 .demo {
   opacity: 0.6;
 }
