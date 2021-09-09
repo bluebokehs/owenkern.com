@@ -50,7 +50,7 @@
           <h3>Owen Kern</h3>
         </a>
         <div class="textbox">
-          <h3>I'm a designer/developer studying CM at Georgia Tech.</h3>
+          <h3>I'm a designer/developer studying Computational Media at GT.</h3>
           <p>If you are looking for freelance design or development, contact me!</p>
         </div>
         <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
@@ -86,8 +86,8 @@
         <h3>About Me</h3>
         <p>My name is Owen Kern. I am a third year Computational Media major at Georgia Tech. <br />I have been doing all things design and development for years.</p>
       </div>
-      <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
-      <div id="social-shop">
+      <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank" data-aos="fade-right">email me</a>
+      <div id="social-shop" data-aos="fade-left">
         <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
           <i class="fab fa-youtube"></i>
         </a>
@@ -108,9 +108,19 @@
   </div>
 
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
   <script>
     AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      $('#header-background').css({
+        filter: "blur(" + (scroll/500) + "px)"
+        
+      })
+    })
   </script>
 </body>
 
