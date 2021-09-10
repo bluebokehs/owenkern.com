@@ -117,6 +117,7 @@ div {
 
 .textbox h3 {
   margin: 0;
+  font-size: 42px;
   font-weight: lighter;
   line-height: 1.22em;
   width: 660px;
@@ -143,6 +144,11 @@ div {
   font-weight: 500;
 }
 
+#email-link:hover {
+  background: black;
+  color: white;
+}
+
 .discover {
   /* Text positioning */
   position: relative;
@@ -167,8 +173,6 @@ div {
 .discover li a:hover {
   color: rgb(70,70,70);
 } 
-
-
 
 .container {
   margin: 200px auto;
@@ -199,6 +203,10 @@ div {
 
 .card > div {
   padding: 2rem;
+}
+
+.card:nth-child(odd) img{
+  order: 2;
 }
 
 .photoshow {
@@ -420,11 +428,12 @@ a {
   text-align: center;
 }
 
-footer {
-  height: 13vw;
-  color: white;
-  text-align: center;
-  padding-top: .05vw;
+.about p {
+  font-size: large;
+}
+
+#footer-social-shop {
+  float: right;
 }
 
 #footer-social-shop a {
@@ -441,7 +450,20 @@ footer {
 
 
 
-
+@media screen and (max-width:1200px) {
+  
+  #page-wrapper {
+    padding: 30px 40px 60px;
+  }
+  
+  .textbox {
+    margin-top: 40vh;
+  }
+  
+  .textbox h3 {
+    max-width: 500px;
+  }
+}
 
 
 
@@ -459,11 +481,11 @@ footer {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   p {
@@ -471,34 +493,27 @@ footer {
     padding: 10px;
   }
 
-  .info p {
-    font-size: 4vw;
-    padding: 10px;
+  #page-wrapper {
+    padding: 15px 15px 20px;
   }
 
-/* makes navbar a white bar */
-  .navbar {
-    width: 100%;
-    padding: 0;
-    padding-bottom: 10px;
+  #social-shop {
+    display: none;
   }
 
-/* makes menu disappear */
-  .menu li {
+  .textbox {
+    max-width: 350px;
+    margin-top: 40vh;
+  }
+
+  .textbox h3 {
+    font-size: 30px;
+    max-width: 350px;
+    margin-top: 40vh;
+  }
+
+  .card {
     display: block;
-    text-align: center;
-  }
-
-  .menu li a {
-    font-size: 20px;
-  }
-
-  .parallax img {
-    max-height: 100%;
-  }
-
-  .parallax img {
-    min-height: 500px;
   }
 
   .about {
@@ -506,7 +521,7 @@ footer {
   }
 
   .about p {
-    font-size: 20px;
+    font-size: large;
   }
 
   .about img {

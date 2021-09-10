@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
-<!--new style of website-->
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <head>
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Owen Kern">
-    <title>Owen Kern | Home</title>
+    <title>Owen Kern</title>
     <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -57,37 +56,37 @@
       </div>
       <main class="container">
         <h3>Recent Projects</h3>
-        <a href="pages/photography.html"><section class="card">
+        <section class="card">
           <img src="images/designs.jpeg" alt="">
-          <div>
+          <a href="pages/photography.html"><div>
             <h4>EZPT</h4>
             <p>EZPT gives real-time audio and visual feedback while users workout using computer vision technology. I used Adobe XD and Photoshop to design it.</p>
             <label>UX/UI Design</label>
-          </div>
-        </section></a>
-        <a href="pages/videography.html"><section class="card" data-aos="fade-up">
-          <div>
+          </div></a>
+        </section>
+        <section class="card" data-aos="fade-up">
+          <img src="images/waves.jpg" alt="">
+          <a href="pages/videography.html"><div>
             <h4>Get A Grip!</h4>
             <p>I taught myself how to design and devlop a game for iOS devices called Get a Grip! in Unity, programming in C#. </p>
             <label>iOS Design & Development</label>
-          </div>
-          <img src="images/waves.jpg" alt="">
-        </section></a>
-        <a href="pages/games.html"><section class="card" data-aos="fade-up">
+          </div></a>
+        </section>
+        <section class="card" data-aos="fade-up">
           <img src="images/land.png" alt="">
-          <div>
+          <a href="pages/games.html"><div>
             <h4>California</h4>
             <p>I made a travel film of a trip to California. I used Adobe Premiere Pro to accomlish this.</p>
             <label>Videography</label>
-          </div>
-        </section></a>
+          </div></a>
+        </section>
       </main>
       <div class="about" data-aos="fade-up">
         <h3>About Me</h3>
         <p>My name is Owen Kern. I am a third year Computational Media major at Georgia Tech. <br />I have been doing all things design and development for years.</p>
       </div>
       <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank" data-aos="fade-right">email me</a>
-      <div id="social-shop" data-aos="fade-left">
+      <div id="footer-social-shop" data-aos="fade-left">
         <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
           <i class="fab fa-youtube"></i>
         </a>
@@ -107,7 +106,6 @@
     </div>
   </div>
 
-
   <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
   <script>
     AOS.init();
@@ -118,7 +116,7 @@
       var scroll = $(window).scrollTop();
       $('#header-background').css({
         filter: "blur(" + (scroll/500) + "px)"
-        
+        , opacity: "." + 1/(scroll/5000)
       })
     })
   </script>
