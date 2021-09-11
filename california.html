@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Owen Kern">
+    <title>Owen Kern</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#111111">
+    <meta name="msapplication-TileColor" content="#111111">
+    <meta name="theme-color" content="#111111">
+    <script src="https://kit.fontawesome.com/e58ee0a013.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+
+  
+  <body>
+    
+    <div id="header-background" style="background-image: url('/images/cali1gray.png');">
+    </div>
+    <div id="page-wrapper">
+      <div id="header-wrapper">
+        <div id="social-shop">
+          <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/okern20/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/bluebokehs">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.behance.net/owenkern">
+            <i class="fab fa-behance"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/owen-kern/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <a href="https://owenkern.com" id="avatar_name">
+          <img src="/images/headshot.jpeg">
+          <h3>Owen Kern</h3>
+        </a>
+        <div class="textbox">
+          <h3>I'm a hobbyist photographer who loves to travel.</h3>
+          <p>If you are looking for freelance design or development, contact me!</p>
+        </div>
+        <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
+      </div>
+      <main class="container">
+        <h3>Project Details</h3>
+        <section class="card">
+          <img src="images/cali3.jpg" alt="">
+          <div>
+            <h4>San Francisco Outlands</h4>
+            <p>On the north side of the San Francisco Bridge, there is an overlook where 
+              you can see the city and bridge in the same shot, like in the background. 
+              Behind this overlook, is a cloudy mountainous area where this shot was taken.</p>
+          </div>
+        </section>
+        <section class="card" data-aos="fade-up">
+          <img src="images/cali4.jpeg" alt="">
+          <div>
+            <h4>Long Exposure</h4>
+            <p>Using my Nikon D3300 on a tripod, I wantred to take a long exposure in the
+              bottom of the Yosemite Valley, where a tree was lit up in front of the milky way above.
+            </p>
+          </div>
+        </section>
+        <section class="card" data-aos="fade-up">
+          <img src="images/cali23.jpeg" alt="">
+          <div>
+            <h4>Yosemite</h4>
+            <p>Upon entering Yosemite Valley, you are greeting with this view of El Capitan and
+              Yosemite Falls, I enjoy putting a color grade and doing basic edits to the photos I take.</p>
+          </div>
+        </section>
+      </main>
+      <div class="about" data-aos="fade-up">
+        <h3>About Me</h3>
+        <p>My name is Owen Kern. I am a third year Computational Media major at Georgia Tech. <br />I have been doing all things design and development for years.</p>
+      </div>
+      <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank" data-aos="fade-right">email me</a>
+      <div id="footer-social-shop" data-aos="fade-left">
+        <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/okern20/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/bluebokehs">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.behance.net/owenkern">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/owen-kern/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      $('#header-background').css({
+        filter: "blur(" + (scroll/500) + "px)" + " opacity(" + (1/(scroll/40000)) + "%)"
+      })
+    })
+  </script>
+</body>
+
+</html>

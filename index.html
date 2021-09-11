@@ -44,7 +44,7 @@
             <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
-        <a href="https://owenkern.com" id="avatar_name">
+        <a href="index.html" id="avatar_name">
           <img src="/images/headshot.jpeg">
           <h3>Owen Kern</h3>
         </a>
@@ -58,26 +58,26 @@
         <h3>Recent Projects</h3>
         <section class="card">
           <img src="images/designs.jpeg" alt="">
-          <a href="pages/photography.html"><div>
+          <a href="ezpt.html"><div>
             <h4>EZPT</h4>
             <p>EZPT gives real-time audio and visual feedback while users workout using computer vision technology. I used Adobe XD and Photoshop to design it.</p>
             <label>UX/UI Design</label>
           </div></a>
         </section>
         <section class="card" data-aos="fade-up">
-          <img src="images/waves.jpg" alt="">
-          <a href="pages/videography.html"><div>
+          <img src="images/getagrip.png" alt="">
+          <a href="getagrip.html"><div>
             <h4>Get A Grip!</h4>
             <p>I taught myself how to design and devlop a game for iOS devices called Get a Grip! in Unity, programming in C#. </p>
             <label>iOS Design & Development</label>
           </div></a>
         </section>
         <section class="card" data-aos="fade-up">
-          <img src="images/land.png" alt="">
-          <a href="pages/games.html"><div>
+          <img src="images/cali1.jpeg" alt="">
+          <a href="california.html"><div>
             <h4>California</h4>
-            <p>I made a travel film of a trip to California. I used Adobe Premiere Pro to accomlish this.</p>
-            <label>Videography</label>
+            <p>This is a photoset from my trip to California. I shoot photography and videography on a Nikon D3300.</p>
+            <label>Photography</label>
           </div></a>
         </section>
       </main>
@@ -85,8 +85,8 @@
         <h3>About Me</h3>
         <p>My name is Owen Kern. I am a third year Computational Media major at Georgia Tech. <br />I have been doing all things design and development for years.</p>
       </div>
-      <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank" data-aos="fade-right">email me</a>
-      <div id="footer-social-shop" data-aos="fade-left">
+      <a id="footer-email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
+      <div id="footer-social-shop">
         <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
           <i class="fab fa-youtube"></i>
         </a>
@@ -115,8 +115,7 @@
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       $('#header-background').css({
-        filter: "blur(" + (scroll/500) + "px)"
-        , opacity: "." + 1/(scroll/5000)
+        filter: "blur(" + (scroll/500) + "px)" + " opacity(" + (1/(scroll/40000)) + "%)"
       })
     })
   </script>
