@@ -84,21 +84,68 @@
           <h3>More</h3>
           <div class="row">
             <div class="column">
-              <img src="images/02.png">
-              <img src="images/beach4.jpg">
+              <div class="image" data-aos="fade-up">
+                <img src="images/02.png">
+                <div class="text-block">
+                  <h4>Poster Series</h4>
+                  <p>I made a series of posters using Cinema4D and Photoshop.</p>
+                </div>
+              </div>
+              <div class="image" data-aos="fade-up">
+                <img src="images/beach4.jpg">
+                <div class="text-block">
+                  <h4>Beach Photos</h4>
+                  <p>I took a set of photos at the beach.</p>
+                </div>
+              </div>
             </div>
             <div class="column">
-              <img src="images/land.png">
-              <img src="images/spiral.png">
-              <img src="images/cali1.jpeg">
+              <div class="image" data-aos="fade-up">
+                <img src="images/land.png">
+                <div class="text-block">
+                  <h4>The Project</h4>
+                  <p>I developed a protoype for a game with a group of friends.</p>
+                </div>
+              </div>
+              <div class="image" data-aos="fade-up">
+                <img src="images/Phone4.png">
+                <div class="text-block">
+                  <h4>Daily UI</h4>
+                  <p>I participated in the 100 day Daily UI Challenge.</p>
+                </div>
+              </div>
             </div>
             <div class="column">
-              <img src="images/cost2.jpeg">
-              <img src="images/keys.png">
+              <div class="image" data-aos="fade-up">
+                <img src="images/cali1.jpeg">
+                <div class="text-block">
+                  <h4>California Photos</h4>
+                  <p>I took a set of photos in California.</p>
+                </div>
+              </div>
+              <div class="image" data-aos="fade-up">
+                <img src="images/keys.png">
+                <div class="text-block">
+                  <h4>3D Renders</h4>
+                  <p>I created some 3D Renders in my pass time.</p>
+                </div>
+              </div>
             </div>
             <div class="column">
-              <img src="images/Phone4.png">
-              <img src="images/Fingers Crossed2.png">
+              <div class="image" data-aos="fade-up">
+                <img src="images/spiral.png">
+                <div class="text-block">
+                  <h4>Blacksburg Photos</h4>
+                  <p>I took many pictures at my time at Virginia Tech.</p>
+                </div>
+              </div>
+              <div class="image" data-aos="fade-up">
+                <a href="ezpt.html"><img src="images/Fingers Crossed 2.png"></a>
+                <div class="text-block">
+                  <h4>Fingers Crossed</h4>
+                  <p>I helped create a board game in a school project.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -140,6 +187,9 @@
         filter: "blur(" + (scroll/500) + "px)" + " opacity(" + (1/(scroll/40000)) + "%)"
       })
     })
+    $(window).load(function(){
+    $('#exampleModal').modal('show');
+    });
   </script>
 </body>
 
