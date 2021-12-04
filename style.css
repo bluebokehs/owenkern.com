@@ -109,6 +109,187 @@ div {
   vertical-align: top;
 }
 
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  box-shadow: 0 0 45px rgba(0,0,0,.15);
+}
+
+#text {
+  background-color:rgba(30, 30, 30, 1);
+  position: absolute;
+  display: block;
+  padding: 20px 50px;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  border-radius: 10px;
+  width: 1020px;
+  height: 900px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+.bar {
+  display: inline-block;
+  text-align: left;
+}
+
+.x {
+  float: right;
+  margin-right: -10px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+#text p {
+  width: 50%;
+}
+
+#text h3 {
+  margin-bottom: 60px;
+}
+
+.bodyText {
+  color:#999;
+}
+
+.description {
+  float: right;
+  text-align: right;
+  width: 280px;
+  margin-top: 0;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin-top: 160px;
+  margin-right: -150px;
+}
+
+
+
+
+
+
+
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 20px 5px;
+  color: #ffffff;
+  font-size: 2rem;
+}
+button span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+.previous:hover span {
+  transform: translateX(-10px) scale(1.2);
+}
+.next:hover span {
+  transform: translateX(10px) scale(1.2);
+}
+.slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider-nav li {
+  display: flex;
+  flex: 2;
+  text-align: center;
+}
+.slider-container img {
+  max-width: 100%;
+  display: none;
+  box-shadow: 10px 10px 20px 0 rgba(47, 54, 94, 0.2);
+}
+.slider-container img.active {
+  display: block;
+  animation: fadeImg 0.8s;
+}
+.slider-nav .arrow {
+  flex: 0 0 15%;
+}
+.slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Deco for Name and Description */
 .textbox {
   margin-top: 150px;
@@ -117,7 +298,7 @@ div {
 
 .textbox h3 {
   margin: 0;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: lighter;
   line-height: 1.22em;
   width: 660px;
@@ -171,7 +352,7 @@ div {
   margin-bottom: 2rem;
 }
 
-.card img {
+.pane img {
   height: 400px;
   object-fit: cover;
 }
