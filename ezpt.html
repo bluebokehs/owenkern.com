@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Owen Kern">
+    <title>Owen Kern</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#111111">
+    <meta name="msapplication-TileColor" content="#111111">
+    <meta name="theme-color" content="#111111">
+    <script src="https://kit.fontawesome.com/e58ee0a013.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+
+  
+  <body>
+    
+    <div id="header-background" style="background-image: url('/images/designsVignette.png');">
+    </div>
+    <div id="page-wrapper">
+      <div id="header-wrapper">
+        <div id="social-shop">
+          <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/okern20/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/bluebokehs">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.behance.net/owenkern">
+            <i class="fab fa-behance"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/owen-kern/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <a href="https://owenkern.com" id="avatar_name">
+          <img src="/images/headshot.jpg">
+          <h3>Owen Kern</h3>
+        </a>
+        <div class="textbox">
+          <h3>I'm the Head of UI/UX at a tech startup called EZPT.</h3>
+          <p>If you are looking for freelance design or development, contact me!</p>
+        </div>
+        <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
+      </div>
+      <main class="container">
+        <h3>Project Details</h3>
+        <div class="bar"><h3>EZPT's mobile app and website</h3></div>
+              <div class="description">
+                <p class="titleText">Role</p>
+                <p class="bodyText">Head of User Experience</p>
+              </div>
+              <p class="titleText">Project Overview</p>
+              <p class="bodyText">I taught myself how to design wireframes for apps and websites in Adobe XD. The designs invloved the sign up and onboarding process, and the process of working out with the app.</p>
+        <section class="card">
+          <img src="images/pose.png" alt="">
+          <div>
+            <h4>Background</h4>
+            <p>EZPT gives real-time audio and visual feedback while users workout using computer vision technology. This allows users to fix their form and recover from injuries at a much faster rate.</p>
+          </div>
+        </section>
+        <section class="card" data-aos="fade-up">
+          <img src="images/xd.png" alt="">
+          <div>
+            <h4>App Design</h4>
+            <p>I taught myself how to design wireframes for apps and websites in Adobe XD. The designs invloved the sign up and onboarding process, and the process of working out with the app. </p>
+          </div>
+        </section>
+        <section class="card" data-aos="fade-up">
+          <img src="images/web2.png" alt="">
+          <div>
+            <h4>Web Design</h4>
+            <p>I designed and built the EZPT website in Webflow. The function of the site is to bring potential customers to the app and tells viewers about the app.</p>
+          </div>
+        </section>
+      </main>
+      <div class="about" data-aos="fade-up">
+        <h3>About Me</h3>
+        <p>My name is Owen Kern. I am a third year Computational Media major at Georgia Tech. <br />I have been doing all things design and development for years.</p>
+      </div>
+      <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank" data-aos="fade-right">email me</a>
+      <div id="footer-social-shop" data-aos="fade-left">
+        <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/okern20/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/bluebokehs">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.behance.net/owenkern">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/owen-kern/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      $('#header-background').css({
+        filter: "blur(" + (scroll/500) + "px)" + " opacity(" + (1/(scroll/40000)) + "%)"
+      })
+    })
+  </script>
+</body>
+
+</html>

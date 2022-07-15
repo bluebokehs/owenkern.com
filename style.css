@@ -5,13 +5,16 @@
 html {
   font-family: "Avenir", sans-serif;
   font-weight: 400;
+  font-size: 1.3rem;
   font-style: normal;
+  color: white;
+  text-align: left;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+body::-webkit-scrollbar {
+  display: none; 
 }
 
 /* Font Size Changes */
@@ -28,478 +31,439 @@ h3 {
 }
 
 p {
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
 div {
   display: block;
 }
 
-ul {
-  list-style-type: none;
+img {
+  border-radius: 7px;
 }
 
-/* Text Color Changes on hover */
-.menu li a:hover {
-  color: rgb(70,70,70);
+label {
+  color: gray;
 }
 
-.menu {
-  font-weight: bold;
+div {
+  display: block;
 }
 
-.parallax {
-  background-image: url("/images/atl2.png");
+#page-wrapper {
+  padding: 60px 80px 120px;
+  margin: 0 auto;
+  max-width: 1600px;
+}
 
-  /* Set a specific height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-
+#header-background {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 110%;
-  box-shadow: 0 -150px 100px rgba(0,0,0,1) inset;
-}
-
-/* Makes the background fit the entire screen */
-.parallax img {
-  max-width: 100%;
-}
-
-.parallaxGame {
-  background-image: url("/images/title.png");
-
-  /* Set a specific height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  box-shadow: 0 -150px 100px rgba(0,0,0,1) inset;
+  z-index: -2;
+  transition: filter .5s,opacity 3s;
 }
 
 /* Makes the background fit the entire screen */
-.parallaxGame img {
+#header-background img {
   max-width: 100%;
 }
 
-.parallaxPhoto {
-  background-image: url("/images/cali3.jpg");
-
-  /* Set a specific height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  box-shadow: 0 -150px 100px rgba(0,0,0,1) inset;
+#social-shop {
+  float: right;
 }
 
-/* Makes the background fit the entire screen */
-.parallaxPhoto img {
-  max-width: 100%;
+#social-shop a {
+  color: white;
+  display: inline-block;
+  font-size: 22px;
+  padding: 0 12px;
+  line-height: 40px;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
 }
 
-.parallaxVideo {
-  background-image: url("/images/waves.jpg");
-
-  /* Set a specific height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  box-shadow: 0 -150px 100px rgba(0,0,0,1) inset;
-}
-
-/* Makes the background fit the entire screen */
-.parallaxVideo img {
-  max-width: 100%;
-}
-
-/* Decoration for the Navigation Bar */
-.menu li a {
-   text-decoration: none;
-   color: white;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-   display: block;
-   padding:0 25px;
-   line-height: 30px;
-   position: relative;
-   font-size: 1.5vw;
-}
-
-.menu li {
+#avatar_name {
+  line-height: 44px;
+  height: 44px;
   display: inline-block;
 }
 
-.navbar {
-  padding-top: 15px;
-  background-image: linear-gradient(to top, rgba(100,100,100,0), rgba(100,100,100,.5));
+#avatar_name h3 {
+  display: inline;
+  font-size: xx-large;
 }
 
-nav {
-  padding: 10px 10px 10px 10px;
+#avatar_name img {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  box-shadow: 0 0 45px rgba(0,0,0,.15);
+}
+
+#text {
+  background-color:rgba(30, 30, 30, 1);
+  position: absolute;
+  display: block;
+  padding: 20px 50px;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  border-radius: 10px;
+  width: 1020px;
+  height: 900px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+.bar {
+  display: inline-block;
+  text-align: left;
+}
+
+.x {
+  float: right;
+  margin-right: -10px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+#text p {
+  width: 50%;
+}
+
+#text h3 {
+  margin-bottom: 60px;
+}
+
+.bodyText {
+  color:#999;
+}
+
+.description {
+  float: right;
   text-align: right;
-  margin: 0 auto;
-  width: calc(100% - 60px);
+  width: 280px;
+  margin-top: 0;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin-top: 160px;
+  margin-right: -150px;
 }
 
 /* Deco for Name and Description */
 .textbox {
-  color: white;
-  position: absolute;
-  top: 25%;
-  width: 55%;
-  text-align: center;
+  margin-top: 150px;
+  max-width: 600px;
 }
 
 .textbox h3 {
+  margin: 0;
+  font-size: 36px;
   font-weight: lighter;
+  line-height: 1.22em;
+  width: 660px;
 }
 
-body {
-  background-color: black;
+.textbox p {
+  margin-top: 25px;
+  margin-bottom: 0;
+  opacity: .80;
+  letter-spacing: .35px;
+  line-height: 16px;
+  font-size: large;
 }
 
-.about {
-  padding: 10px;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  color: white;
-  background-color: black;
-  text-align: center;
-}
-
-.about img {
-  height: 20vw;
-  border-radius: 50%;
-}
-
-.info {
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  color: white;
-  text-align: center;
-}
-
-.discover {
-  /* Text positioning */
-  position: relative;
-  text-align: center;
-}
-
-.discover h2 {
-  text-align: center;
-}
-
-.discover li {
-  font-size: 2vw;
-  padding: 20px;
-  list-style-type: none;
-}
-
-.discover li a {
+#email-link {
+  margin-top: 25px;
   text-decoration: none;
   color: black;
-}
-
-.discover li a:hover {
-  color: rgb(70,70,70);
-}
-
-
-.photoshow {
-  background-color: black;
-
-  /* Set a specific height */
-  height: auto;
-  text-align: center;
-}
-
-.photoshow a {
-  color: white;
-  position: relative;
+  background: white;
   display: inline-block;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 30px;
+  border-radius: 25px;
+  padding: 0 30px;
+  line-height: 50px;
+  font-weight: 500;
 }
 
-.photoshow a h4 {
-  margin: 10px;
-}
-
-.photoshow a img {
-  width: 350px;
-  justify-self: center;
-}
-
-.photoselect {
-  position: relative;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.photoselect img {
-  vertical-align: middle;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Hide the /images by default */
-.slides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+#email-link:hover {
+  background: black;
   color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.container {
+  margin: 200px auto;
+  max-width: 1100px;
+  overflow: hidden;
+  padding: 0 2rem;
 }
 
+.container img {
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2em;
+}
+
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+.card img {
+  height: 375px;
+  object-fit: cover;
+}
+
+.card > div {
+  padding: 2rem;
+}
+
+.card:nth-child(odd) img{
+  order: 2;
+}
+
+.more {
+  margin: 250px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
 .column {
-  float: left;
-  /* to change the amount of pictures,
-  divide the number by 100,
-  that is your width */
-  width: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-.columncali {
-  float: left;
-  /* to change the amount of pictures,
-  divide the number by 100,
-  that is your width */
-  width: 6.6667%;
+.still-image {
+  position: relative;
 }
 
-.columnbeach {
-  float: left;
-  /* to change the amount of pictures,
-  divide the number by 100,
-  that is your width */
-  width: 10%;
+.still-image img {
+  transition: all .3s;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  margin-top: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+  width: 243px;
+  height: 243px;
 }
 
-.columnposter {
-  float: left;
-  /* to change the amount of pictures,
-  divide the number by 100,
-  that is your width */
-  width: 10%;
+.image {
+  position: relative;
 }
 
-.columnother {
-  float: left;
-  /* to change the amount of pictures,
-  divide the number by 100,
-  that is your width */
-  width: 11.111%;
+.image img {
+  transition: all .3s;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  margin-top: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+  width: 243px;
+  height: 243px;
 }
 
-.columnburg {
-  float: left;
-  /* to change the amount of pictures,
-  divide the number by 100,
-  that is your width */
-  width: 12.5%;
+.image:hover img {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 
-/* Add a transparency effect for thumnbail /images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
+.image:hover .text-block {
   opacity: 1;
 }
 
-.rendershow {
-  background-color: black;
-
-  /* Set a specific height */
-  height: auto;
-  text-align: center;
-}
-
-.rendershow a {
-  color: white;
+.long-image {
   position: relative;
-  display: inline-block;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 30px;
 }
 
-.rendershow h3 {
-  color: white;
-  text-align: left;
-  margin-left: 40px;
+.long-image img {
+  transition: all .3s;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  margin-top: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+  width: 243px;
+  height: 493px;
 }
 
-.rendershow a h4 {
-  margin: 10px;
-}
-
-.rendershow a img {
-  height: 350px;
-  justify-self: center;
-}
-
-.videoshow {
-  background-color: black;
-  color: white;
-
-  /* Set a specific height */
-  height: auto;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.videoshow h3 {
-  text-align: left;
-  margin-left: 40px;
-}
-
-.video {
+.wide-image {
   position: relative;
+}
+
+.wide-image img {
+  transition: all .3s;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  margin-top: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+  width: 493px;
+  height: 243px;
+}
+
+.poster {
+  position: relative;
+}
+
+.poster img {
+  transition: all .3s;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  margin-top: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+  width: 243px;
+}
+
+.bottom {
+  margin-top: 251px;
+}
+
+/*.long-image:hover img {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.long-image:hover .text-block {
+  opacity: 1;
+}*/
+
+.text-block {
+  position: absolute;
+  top: 0.47vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(30, 30, 30, 0.6);
+  color: #fff;
+  opacity: 0;
+  border-radius: 7px;
+  text-align: center;
+  padding: 5px;
+  padding-top: 32px;
+
+  transition: all .3s;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.about {
+  margin-top: 0px;
+  margin-bottom: 200px;
+  color: white;
+  text-align: center;
+}
+
+.about p {
+  font-size: large;
+}
+
+#footer-email-link {
+  margin-top: 25px;
+  text-decoration: none;
+  color: black;
+  background: white;
   display: inline-block;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 30px;
+  border-radius: 25px;
+  padding: 0 30px;
+  line-height: 50px;
+  font-weight: 500;
 }
 
-.videoshow iframe {
-  justify-self: center;
-}
-
-footer {
-  background-color: black;
-  height: 13vw;
+#footer-email-link:hover {
+  background: black;
   color: white;
-  text-align: center;
-  padding-top: .05vw;
 }
 
-footer img{
-  height: 1vw;
+#footer-social-shop {
+  float: right;
 }
 
-footer li {
-  display: inline;
-}
-
-footer li a {
+#footer-social-shop a {
   color: white;
-  text-align: center;
+  display: inline-block;
+  font-size: 22px;
+  padding: 0 12px;
+  line-height: 40px;
   text-decoration: none;
-  font-size: 1vw;
-  padding-right: 40px;
-}
-
-footer li a:hover {
-  color: rgb(200,200,200);
+  position: relative;
+  text-align: center;
 }
 
 
 
 
+@media screen and (max-width:1200px) {
+  
+  #page-wrapper {
+    padding: 30px 40px 60px;
+  }
+  
+  .textbox {
+    margin-top: 40vh;
+  }
+  
+  .textbox h3 {
+    max-width: 500px;
+  }
 
+  .container {
+    margin: 50px auto;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .column img {
+    width: 100%;
+    
+  }
+}
 
 
 
@@ -517,83 +481,74 @@ footer li a:hover {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   p {
-    font-size: 3vw;
-    padding: 10px;
-  }
-
-  .info p {
-    font-size: 4vw;
-    padding: 10px;
-  }
-
-/* makes navbar a white bar */
-  .navbar {
-    width: 100%;
-    padding: 0;
-    padding-bottom: 10px;
-  }
-
-/* makes menu disappear */
-  .menu li {
-    display: block;
-    text-align: center;
-  }
-
-  .menu li a {
     font-size: 20px;
+    padding: 10px;
   }
 
-  .parallax img {
-    max-height: 100%;
+  #page-wrapper {
+    padding: 15px 15px 20px;
   }
 
-  .parallax img {
-    min-height: 500px;
+  #social-shop {
+    display: none;
+  }
+
+  .textbox {
+    max-width: 350px;
+    margin-top: 40vh;
+  }
+
+  .textbox h3 {
+    font-size: 30px;
+    max-width: 350px;
+    margin-top: 40vh;
+  }
+
+  .container {
+    margin: 50px auto;
+  }
+
+  .card {
+    display: block;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 
   .about {
     text-align: center;
+    margin-bottom: 150px;
   }
 
   .about p {
-    font-size: 20px;
+    font-size: large;
   }
 
   .about img {
     height: 35vw;
   }
 
-  .photoselect {
-    width: 80%;
+  #footer-email-link {
+    float: center;
+    margin: 0 auto;
   }
 
-  video {
-    width: auto;
-    height: 20vw;
+  #footer-social-shop {
+    float: center;
+    margin: 0 auto;
   }
-
-  footer {
-    height: 110px;
-    color: white;
-    text-align: center;
-    padding: 5px;
-  }
-
-  footer li a {
-    font-size: 15px;
-    padding-right: 10px;
-  }
-
-  footer img{
-    height: 15px;
-  }
-
 }
