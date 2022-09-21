@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Owen Kern">
+  <title>Owen Kern</title>
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.jpg">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#111111">
+  <meta name="msapplication-TileColor" content="#111111">
+  <meta name="theme-color" content="#111111">
+  <script src="https://kit.fontawesome.com/e58ee0a013.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <div id="header-background" class="scroll" style="background-image: url('/images/stockholm2.jpg');">
+    </div>
+    <div id="header-wrapper">
+      <div id="social-shop">
+        <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/okern20/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/bluebokehs">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.behance.net/owenkern">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/owen-kern/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <a href="index.html" id="avatar_name">
+        <img src="/images/headshot.jpg">
+        <h3>Owen Kern</h3>
+      </a>
+      <div class="textbox">
+        <h3>I'm a designer/developer studying Computational Media at Georgia Tech.</h3>
+        <p>If you are looking for freelance design or development, contact me!</p>
+      </div>
+      <a id="email-link" href="mailto:oskern01@gmail.com" target="_blank">email me</a>
+    </div>
+    <section id="recents-wrapper" class="scroll">
+      <h3>Recent Projects</h3>
+      <section class="card">
+        <a href="ncr.html"><img class="pane" src="images/ncr.jpg" alt=""></a>
+        <div>
+          <h4>NCR</h4>
+          <p>I was a UX Intern at NCR for Summer 2022. I learned Figma techniques like Auto Layout and Components and
+            participated in the NCR Hackathon 2022.</p>
+          <label>UX/UI Design</label>
+        </div>
+      </section>
+    </section>
+
+    <section id="more-wrapper" class="scroll" data-aos="fade-up">
+      <div id="filter-container">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('ux')">UX/UI</button>
+        <button class="btn" onclick="filterSelection('3d')">3D Renders</button>
+        <button class="btn" onclick="filterSelection('game')">Game Dev</button>
+        <button class="btn" onclick="filterSelection('photo')">Photography</button>
+      </div>
+      <h3>More</h3>
+      <div class="more-container">
+        
+        <a href="ezpt.html">
+          <div class="filterDiv ux">
+            <img src="images/designs.jpeg">
+            <div class="text-block">
+              <h4>EZPT</h4>
+              <p>Real-time AV feedback while users workout using CV.</p>
+              <label>UX/UI</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="stockholm.html">
+          <div class="filterDiv photo">
+            <img src="images/subway.jpg">
+            <div class="text-block">
+              <h4>Stockholm Photos</h4>
+              <p>I took a set of photos in Stockholm.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="posterSeries.html">
+          <div class="filterDiv 3d">
+            <img src="images/posterSeries/02.png">
+            <div class="text-block">
+              <h4>Poster Series</h4>
+              <p>I made a series of posters using Cinema4D and Photoshop.</p>
+              <label>3D Renders</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="norway.html">
+          <div class="filterDiv photo">
+            <img src="images/norway.jpg">
+            <div class="text-block">
+              <h4>Norway Photos</h4>
+              <p>I took a set of photos in Norway.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="atlanta.html">
+          <div class="filterDiv photo">
+            <img src="images/nav.jpg">
+            <div class="text-block">
+              <h4>Atlanta Photos</h4>
+              <p>I took a set of photos in Atlanta.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <div class="filterDiv ux">
+          <img src="images/Phone4.png">
+          <div class="text-block">
+            <h4>Daily UI</h4>
+            <p>I participated in the 100 day Daily UI Challenge.</p>
+            <label>UX/UI</label>
+            <label>[in progress]</label>
+          </div>
+        </div>
+
+        <a href="iceland.html">
+          <div class="filterDiv photo">
+            <img src="images/northernlights.jpg">
+            <div class="text-block">
+              <h4>Iceland Photos</h4>
+              <p>I took a set of photos in Iceland.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://bluebokehs.github.io/rollerrush/">
+          <div class="filterDiv game">
+            <img src="images/rollerrush.png">
+            <div class="text-block">
+              <h4>Roller Rush</h4>
+              <p>I helped develop a mulitplayer game in JS.</p>
+              <label>Game Dev</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="ncr.html">
+          <div class="filterDiv ux">
+            <img src="images/ncr.jpg">
+            <div class="text-block">
+              <h4>NCR</h4>
+              <p>I learned various Figma techniques while working in a professional setting.</p>
+              <label>UX/UI</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="beach.html">
+          <div class="filterDiv photo">
+            <img src="images/beach/beach4.jpg">
+            <div class="text-block">
+              <h4>Beach Photos</h4>
+              <p>I took a set of photos in Santa Rosa Beach.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="getagrip.html">
+          <div class="filterDiv game ux">
+            <img src="images/getagrip.png">
+            <div class="text-block">
+              <h4>Get A Grip!</h4>
+              <p>I taught myself how to make a game called Get a Grip! in Unity.</p>
+              <label>Game Dev</label>
+              <label>UX/UI</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="california.html">
+          <div class="filterDiv photo">
+            <img src="images/cali/cali1.jpeg">
+            <div class="text-block">
+              <h4>California Photos</h4>
+              <p>I took a set of photos in California.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="berlin.html">
+          <div class="filterDiv photo">
+            <img src="images/berlin.jpg">
+            <div class="text-block">
+              <h4>Berlin Photos</h4>
+              <p>I took a set of photos in Berlin.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="3DRenders.html">
+          <div class="filterDiv 3d">
+            <img src="images/3d/3DMoon.png">
+            <div class="text-block">
+              <h4>3D Renders</h4>
+              <p>I created some 3D Renders in my pass time.</p>
+              <label>3D Renders</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="london.html">
+          <div class="filterDiv photo">
+            <img src="images/towerBridge.jpg">
+            <div class="text-block">
+              <h4>London Photos</h4>
+              <p>I took a set of photos in London.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="digitalpostcards.html">
+          <div class="filterDiv ux">
+            <img src="images/dpyellow.jpg">
+            <div class="text-block">
+              <h4>Digital Postcards</h4>
+              <p>I am designing an app that shares users travels with a personal touch.</p>
+              <label>UX/UI</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="fingersCrossed.html">
+          <div class="filterDiv game 3d">
+            <img src="images/Fingers Crossed 2.png">
+            <div class="text-block">
+              <h4>Fingers Crossed</h4>
+              <p>I helped create a board game in a school project.</p>
+              <label>Game Dev</label>
+              <label>3D Renders</label>
+            </div>
+          </div>
+        </a>
+
+        <a href="blacksburg.html">
+          <div class="filterDiv photo">
+            <img src="images/blacksburg/bbspiral.png">
+            <div class="text-block">
+              <h4>Blacksburg Photos</h4>
+              <p>I took many pictures at my time at Virginia Tech.</p>
+              <label>Photography</label>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <div id="about-wrapper" class="scroll-center" data-aos="fade-up">
+      <h3>About Me</h3>
+      <p>My name is Owen Kern. I am a fourth year Computational Media major at Georgia Tech. <br />I have been doing all
+        things design and development for years. <br />Contact me for your design related needs!</p>
+    </div>
+    <a id="footer-email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
+    <div id="footer-social-shop">
+      <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/okern20/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/bluebokehs">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.behance.net/owenkern">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/owen-kern/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      $('#header-background').css({
+        filter: "blur(" + (scroll / 500) + "px)" + " opacity(" + (1 / (scroll / 40000)) + "%)"
+      })
+    })
+    $(window).load(function () {
+      $('#exampleModal').modal('show');
+    });
+  </script>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("filter-container");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+</body>
+
+</html>

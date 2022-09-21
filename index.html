@@ -1,164 +1,30 @@
 <!DOCTYPE html>
 
 <html>
+
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Owen Kern">
+  <title>Owen Kern</title>
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.jpg">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#111111">
+  <meta name="msapplication-TileColor" content="#111111">
+  <meta name="theme-color" content="#111111">
+  <script src="https://kit.fontawesome.com/e58ee0a013.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="flickity.css">
+</head>
 
-  <head>
-    <meta name="viewport" content="width=device-width">
-    <meta name="author" content="Owen Kern">
-    <title>Owen Kern</title>
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#111111">
-    <meta name="msapplication-TileColor" content="#111111">
-    <meta name="theme-color" content="#111111">
-    <script src="https://kit.fontawesome.com/e58ee0a013.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css" type="text/css">
-  </head>
-
-  <body>    
-    <div id="header-background" style="background-image: url('/images/atl4.jpg');">
+<body>
+  <div id="page-wrapper">
+    <div id="header-background" class="scroll" style="background-image: url('/images/stockholm/stockholm2.jpg');">
     </div>
-    <div id="page-wrapper">
-      <div id="header-wrapper">
-        <div id="social-shop">
-          <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://www.instagram.com/okern20/">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://github.com/bluebokehs">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.behance.net/owenkern">
-            <i class="fab fa-behance"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/owen-kern/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-        <a href="index.html" id="avatar_name">
-          <img src="/images/headshot.jpg">
-          <h3>Owen Kern</h3>
-        </a>
-        <div class="textbox">
-          <h3>I'm a designer/developer studying Computational Media at Georgia Tech.</h3>
-          <p>If you are looking for freelance design or development, contact me!</p>
-        </div>
-        <a id="email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
-      </div>
-      <main class="container">
-        <h3>Recent Projects</h3>
-        <section class="card">
-          <a href="ezpt.html"><img class="pane" src="images/designs.jpeg" alt=""></a>
-          <div>
-            <h4>EZPT</h4>
-            <p>EZPT gives real-time audio and visual feedback while users workout using computer vision technology. I used Adobe XD and Photoshop to design it.</p>
-            <label>UX/UI Design</label>
-          </div>
-        </section>
-        <section class="card" data-aos="fade-up">
-          <div>
-            <h4>Get A Grip!</h4>
-            <p>I taught myself how to design and devlop a game for iOS devices called Get a Grip! in Unity, programming in C#. </p>
-            <label>iOS Design & Development</label>
-          </div>
-          <a href="getagrip.html"><img class="pane" src="images/getagrip.png" alt=""></a>
-        </section>
-        <section class="card" data-aos="fade-up">
-          <a href="california.html"><img class="pane" src="images/cali1.jpeg" alt=""></a>
-          <div>
-            <h4>California</h4>
-            <p>This is a photoset from my trip to California. I shoot photography and videography on a Nikon D3300.</p>
-            <label>Photography</label>
-          </div>
-        </section>
-
-        <section class="more">
-          <h3>More</h3>
-          <div class="row">
-            <div class="column">
-              <a href="posterSeries.html"><div class="image" data-aos="fade-up">
-                <img src="images/02.png">
-                <div class="text-block">
-                  <h4>Poster Series</h4>
-                  <p>I made a series of posters using Cinema4D and Photoshop.</p>
-                </div>
-              </div></a>
-              <a href="beach.html"><div class="image" data-aos="fade-up">
-                <img src="images/beach4.jpg">
-                <div class="text-block">
-                  <h4>Beach Photos</h4>
-                  <p>I took a set of photos in Santa Rosa Beach.</p>
-                </div>
-              </div>
-            </div></a>
-            <div class="column">
-              <a href="https://bluebokehs.github.io/rollerrush/"><div class="image" data-aos="fade-up">
-                <img src="images/rollerrush.png">
-                <div class="text-block">
-                  <h4>Roller Rush</h4>
-                  <p>I helped develop a mulitplayer game in JS.</p>
-                </div>
-              </div></a>
-              <div class="image" data-aos="fade-up">
-                <img src="images/Phone4.png">
-                <div class="text-block">
-                  <h4>Daily UI</h4>
-                  <p>I participated in the 100 day Daily UI Challenge.</p>
-                  <label>[in progress]</label>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <a href="california.html"><div class="image" data-aos="fade-up">
-                <img src="images/cali1.jpeg">
-                <div class="text-block">
-                  <h4>California Photos</h4>
-                  <p>I took a set of photos in California.</p>
-                </div>
-              </div></a>
-              <a href="3DRenders.html"><div class="image" data-aos="fade-up">
-                <img src="images/3DMoon.png">
-                <div class="text-block">
-                  <h4>3D Renders</h4>
-                  <p>I created some 3D Renders in my pass time.</p>
-                </div>
-              </div>
-            </div></a>
-            <div class="column">
-              <a href="blacksburg.html"><div class="image" data-aos="fade-up">
-                <img src="images/bbspiral.png">
-                <div class="text-block">
-                  <h4>Blacksburg Photos</h4>
-                  <p>I took many pictures at my time at Virginia Tech.</p>
-                </div>
-              </div></a>
-              <a href="fingersCrossed.html"><div class="image" data-aos="fade-up">
-                <img src="images/Fingers Crossed 2.png">
-                <div class="text-block">
-                  <h4>Fingers Crossed</h4>
-                  <p>I helped create a board game in a school project.</p>
-                </div>
-              </div></a>
-            </div>
-          </div>
-        </section>
-
-
-
-      </main>
-
-      <div class="about" data-aos="fade-up">
-        <h3>About Me</h3>
-        <p>My name is Owen Kern. I am a third year Computational Media major at Georgia Tech. <br />I have been doing all things design and development for years. <br />Contact me for your design related needs!</p>
-      </div>
-      <a id="footer-email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
-      <div id="footer-social-shop">
+    <div id="header-wrapper">
+      <div id="social-shop">
         <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
           <i class="fab fa-youtube"></i>
         </a>
@@ -175,81 +41,1117 @@
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
+      <a href="index.html" id="avatar_name">
+        <img src="/images/headshot.jpg">
+        <h3>Owen Kern</h3>
+      </a>
+      <div class="textbox">
+        <h3>I'm a designer/developer studying Computational Media at Georgia Tech.</h3>
+        <p>If you are looking for freelance design or development, contact me!</p>
+      </div>
+      <a id="email-link" href="mailto:oskern01@gmail.com" target="_blank">email me</a>
+    </div>
+    <section id="recents-wrapper" class="scroll">
+      <h3>Recent Projects</h3>
+      <section class="card">
+        <button class="trigger"><img class="pane" src="images/ncr/ncr.jpg" alt=""></button>
+        <div>
+          <h4>NCR</h4>
+          <p>I was a UX Intern at NCR for Summer 2022. I learned Figma techniques like Auto Layout and Components and
+            participated in the NCR Hackathon 2022.</p>
+          <label>UX/UI Design</label>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="row">
+              <h3>NCR</h3>
+              <div class="column left">
+                <h4>Project Overview</h4>
+                <p>I was a User Experience Intern at NCR for Summer 2022. I learned Figma techniques like Auto Layout and Components and
+                participated in the NCR Hackathon 2022 and reached the Top 25 out of roughly 400 teams. Below are a few components and 
+                projects I worked on.</p>
+              </div>
+              <div class="column right">
+                <h4>Role</h4>
+                <div class="text">UX Intern</div>
+                <h4>Project</h4>
+                <div class="text">UX/UI Design</div>
+              </div>
+            </div>
+
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+              <div class="gallery-cell"><img src="images/ncr/LineCharts.jpg"></div>
+              <div class="gallery-cell"><img src="images/ncr/BarCharts.jpg"></div>
+              <div class="gallery-cell"><img src="images/ncr/SwipeableDrawer.jpg"></div>
+              <div class="gallery-cell"><img src="images/ncr/Hackathon.jpg"></div>
+            </div>
+
+            <div class="story">
+              <p class="small">If the Carousel looks broken, try to resize your browser's window.</p>
+              <h4>The Story</h4>
+              <p>For the Summer of 2022, I interned in NCR with the UX team. I was tasked with converting the data visualization library 
+                from desktop to mobile for designers to use in their own high fidelity designs. Additionally, there was a product that had the capability to incorporate a swipeable drawer 
+                design in a mobile web employee facing experience.</p>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </section>
+      <section class="card" data-aos="fade-up">
+        <div>
+          <h4>Digital Postcards App</h4>
+          <p>As Instagram leans further into video content, there is a considerable hole in the photography media
+            market. This app allows users to send postcards to each other to share their travels in a personal way. </p>
+          <label>iOS Design & Development</label>
+        </div>
+        <button class="trigger"><img class="pane" src="images/incards/dpyellow.jpg" alt=""></button>
+
+        <!-- The Modal -->
+        <div class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="row">
+              <h3>Digital Postcards App</h3>
+              <div class="column left">
+                <h4>Project Overview</h4>
+                <p>This app allows users to send postcards to each other to share their travels with a personal touch.
+                  Users can use their own or other user's images to incorporate their travel experiences. More on this coming soon!</p>
+              </div>
+              <div class="column right">
+                <h4>Role</h4>
+                <div class="text">Lead UX</div>
+                <h4>Project</h4>
+                <div class="text">UX/UI Design</div>
+              </div>
+            </div>
+
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+              <div class="gallery-cell"><img src="images/incards/typeface.jpg"></div>
+              <div class="gallery-cell"><img src="images/incards/Digital Postcards.jpg"></div>
+              <div class="gallery-cell"><img src="images/incards/TextEffects.jpg"></div>
+            </div>
+
+            <div class="story">
+              <h4>The Story</h4>
+              <p>As Instagram focuses harder and harder on video content over photography, there's an increasingly larger 
+                gap in the market for an app where photographers can showcase their photos while sharing their travels with their friends.
+                Users will be able to find photos that capture their experiences while traveling or use their own to make their own postcard.</p>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+      <section class="card" data-aos="fade-up">
+        <button class="trigger"><img class="pane" src="images/iceland/northernlights.jpg" alt=""></button>
+        <div>
+          <h4>Iceland Photos</h4>
+          <p>This is a photoset from my trip to Iceland while studying abroad in Sweden. I shoot photography on a Nikon
+            D3300.</p>
+          <label>Photography</label>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="row">
+              <h3>Iceland Photos</h3>
+              <div class="column left">
+                <h4>Project Overview</h4>
+                <p>While studying abroad in Malmo, Sweden, I organized a group of 13 students to take a trip to Iceland.
+                  While there we saw the Northern Lights, drove the Golden Circle, and explored the Ice Caves within a Glacier.</p>
+              </div>
+              <div class="column right">
+                <h4>Role</h4>
+                <div class="text">Photographer</div>
+                <h4>Project</h4>
+                <div class="text">Photography</div>
+              </div>
+            </div>
+
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+              <div class="gallery-cell-offset"><img src="images/iceland/icehole.jpg"></div>
+              <div class="gallery-cell-offset"><img src="images/iceland/red.JPG"></div>
+              <div class="gallery-cell-offset"><img src="images/iceland/mattie.jpg"></div>
+              <div class="gallery-cell-offset"><img src="images/iceland/house2.JPG"></div>
+              <div class="gallery-cell-offset"><img src="images/iceland/sky.jpg"></div>
+              <div class="gallery-cell-offset"><img src="images/iceland/sky2.JPG"></div>
+            </div>
+
+            <div class="story">
+              <h4>The Story</h4>
+              <p>One of my biggest hobbies is photography. Everywhere I go, my camera goes with me. I have wanted to go to Iceland since I was a young child due to how photographic it is.
+                I took advantage of my study abroad and traveled around Europe taking pictures wherever I could. These are a few highlights from my trip to Iceland.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </section>
+
+    <section id="more-wrapper" class="scroll" data-aos="fade-up">
+      <div id="filter-container">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('ux')">UX/UI</button>
+        <button class="btn" onclick="filterSelection('3d')">3D Renders</button>
+        <button class="btn" onclick="filterSelection('game')">Game Dev</button>
+        <button class="btn" onclick="filterSelection('photo')">Photography</button>
+      </div>
+
+      <select id="custom-select" onchange="changeFunc(value);">
+        <option class="opt active" value="all">All</option>
+        <option class="opt" value="ux">UX/UI</option>
+        <option class="opt" value="3d">3D Renders</option>
+        <option class="opt" value="game">Game Dev</option>
+        <option class="opt" value="photo">Photography</option>
+      </select>
+
+      <h3>More</h3>
+      <div class="more-container">
+        
+        <div class="empty">
+          <button class="trigger">
+            <div class="filterDiv ux">
+              <img src="images/ezpt/designs.jpeg">
+              <div class="text-block">
+                <h4>EZPT</h4>
+                <p>Real-time AV feedback while users workout using CV.</p>
+                <label>UX/UI</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>EZPT</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>I worked as the Head of User Experience at a start up called EZPT. 
+                    This role involved creating the designs for the app, building and designing their website, 
+                    creating advertisements for their social media pages. </p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Head of User Experience</div>
+                  <h4>Project</h4>
+                  <div class="text">UX/UI Design</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><img src="images/ezpt/onboarding.jpg"></div>
+                <div class="gallery-cell"><img src="images/ezpt/statistics.jpg"></div>
+                <div class="gallery-cell"><img src="images/ezpt/progress.jpg"></div>
+                <div class="gallery-cell"><img src="images/ezpt/dashboard.jpg"></div>
+              </div>
+
+              <div class="story">
+                <h4>The Story</h4>
+                <p>EZPT is an app that allows users to get real time audio visual feedback while working out using computer vision.
+                  EZPT required a seamless user flow that walk users through their exercises without interfering. Using a simple and clean UI, 
+                  the user is taken through onboarding through finishing a workout seamlessly.</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/stockholm/subway.jpg">
+              <div class="text-block">
+                <h4>Stockholm Photos</h4>
+                <p>I took a set of photos in Stockholm.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Stockholm</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While studying abroad in Malmo, Sweden, I organized a group of students to take a trip to Stockholm.
+                    While there we saw various subway installations, viewed Gamla Stan at sunset, and explored various historical spots.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset"><img src="images/stockholm/subway.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/stockholm/escalator.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/stockholm/escalator2.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/stockholm/bird.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/stockholm/bay.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/stockholm/city.jpg"></div>
+              </div>
+
+              <div class="story">
+                <h4>The Story</h4>
+                <p>One of my biggest hobbies is photography. Everywhere I go, my camera goes with me. I took advantage of my study abroad and traveled around Europe taking pictures wherever I could.
+                   Stockholm was one of my favorite cities I visted while abroad. These are a few highlights from my trip to Stockholm.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv 3d">
+              <img src="images/posterSeries/02.jpg">
+              <div class="text-block">
+                <h4>Poster Series</h4>
+                <p>I made a series of posters using Cinema4D and Photoshop.</p>
+                <label>3D Renders</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Posters Series</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>As an art experiment, I created a series of posters using Cinema4D and Photoshop. Here are the 10 that I created. </p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Creator</div>
+                  <h4>Project</h4>
+                  <div class="text">3D Renders</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/01.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/02.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/03.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/04.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/05.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/06.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/07.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/08.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/09.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/posterSeries/10.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/norway/norway.jpg">
+              <div class="text-block">
+                <h4>Norway Photos</h4>
+                <p>I took a set of photos in Norway.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Norway Photos</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While studying abroad in Malmo, Sweden, I helped organized a group of students to take a trip to Norway.
+                     While there we took a tour through the fjords and traveled through the cities of Bergen and Oslo.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><img src="images/norway/homes.jpg"></div>
+                <div class="gallery-cell"><img src="images/norway/lands.jpg"></div>
+                <div class="gallery-cell"><img src="images/norway/norway.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/atl/nav.jpg">
+              <div class="text-block">
+                <h4>Atlanta Photos</h4>
+                <p>I took a set of photos in Atlanta.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Atlanta Photos</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While studying at GT, I lived in housing that had view of the city. 
+                     During night I took photos of the skyline and traveled around the city for various shots.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset"><img src="images/atl/gt.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/atl/tower.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/atl/pencil.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/atl/street.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/atl/building.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/atl/building2.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/atl/tree.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/atl/nav.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv ux">
+              <img src="images/dailyUI/Phone4.jpg">
+              <div class="text-block">
+                <h4>Daily UI</h4>
+                <p>I participated in the 100 day Daily UI Challenge.</p>
+                <label>UX/UI</label>
+                <label>[in progress]</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Daily UI</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>In order to practice my design skills, I have started the 100 day design challenge called Daily UI. 
+                     These are the first few designs I made for the challenge. I based them all around one concept app where
+                     users create a "photospot" in an area where aspiring photographers can take a good picture.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Designer</div>
+                  <h4>Project</h4>
+                  <div class="text">UX/UI Design</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-square"><img src="images/dailyUI/Phone4.jpg"></div>
+                <div class="gallery-cell-offset2"><img src="images/dailyUI/create.jpg"></div>
+                <div class="gallery-cell-offset2"><img src="images/dailyUI/logIn.jpg"></div>
+                <div class="gallery-cell-offset2"><img src="images/dailyUI/payment.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/beach/beach4.jpg">
+              <div class="text-block">
+                <h4>Beach Photos</h4>
+                <p>I took a set of photos in Santa Rosa Beach.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Beach Photos</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While on vacation in Florida, I took photos of various locals during sunset.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset"><img src="images/beach/beach2.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/beach/beach4.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/beach/beach6.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/beach/beach7.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/beach/beach11.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://bluebokehs.github.io/rollerrush/">
+          <div class="filterDiv game">
+            <img src="images/rollerrush.jpg">
+            <div class="text-block">
+              <h4>Roller Rush</h4>
+              <p>I helped develop a mulitplayer game in JS.</p>
+              <label>Game Dev</label>
+            </div>
+          </div>
+        </a>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv ux">
+              <img src="images/ncr/ncr.jpg">
+              <div class="text-block">
+                <h4>NCR</h4>
+                <p>I learned various Figma techniques while working in a professional setting.</p>
+                <label>UX/UI</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="row">
+                  <h3>NCR</h3>
+                  <div class="column left">
+                    <h4>Project Overview</h4>
+                    <p>I was a User Experience Intern at NCR for Summer 2022. I learned Figma techniques like Auto Layout and Components and
+                    participated in the NCR Hackathon 2022 and reached the Top 25 out of roughly 400 teams. Below are a few components and 
+                    projects I worked on.</p>
+                  </div>
+                  <div class="column right">
+                    <h4>Role</h4>
+                    <div class="text">UX Intern</div>
+                    <h4>Project</h4>
+                    <div class="text">UX/UI Design</div>
+                  </div>
+                </div>
+
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                  <div class="gallery-cell"><img src="images/ncr/LineCharts.jpg"></div>
+                  <div class="gallery-cell"><img src="images/ncr/BarCharts.jpg"></div>
+                  <div class="gallery-cell"><img src="images/ncr/SwipeableDrawer.jpg"></div>
+                  <div class="gallery-cell"><img src="images/ncr/Hackathon.jpg"></div>
+                </div>
+
+                <div class="story">
+                  <p class="small">If the Carousel looks broken, try to resize your browser's window.</p>
+                  <h4>The Story</h4>
+                  <p>For the Summer of 2022, I interned in NCR with the UX team. I was tasked with converting the data visualization library 
+                    from desktop to mobile for designers to use in their own high fidelity designs. Additionally, there was a product that had the capability to incorporate a swipeable drawer 
+                    design in a mobile web employee facing experience.</p>
+                </div>
+                
+              </div>
+
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/iceland/northernlights.jpg">
+              <div class="text-block">
+                <h4>Iceland Photos</h4>
+                <p>I took a set of photos in Iceland.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Iceland Photos</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While studying abroad in Malmo, Sweden, I organized a group of 13 students to take a trip to Iceland.
+                    While there we saw the Northern Lights, drove the Golden Circle, and explored the Ice Caves within a Glacier.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+  
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset"><img src="images/iceland/icehole.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/iceland/red.JPG"></div>
+                <div class="gallery-cell-offset"><img src="images/iceland/mattie.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/iceland/house2.JPG"></div>
+                <div class="gallery-cell-offset"><img src="images/iceland/sky.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/iceland/sky2.JPG"></div>
+              </div>
+  
+              <div class="story">
+                <h4>The Story</h4>
+                <p>One of my biggest hobbies is photography. Everywhere I go, my camera goes with me. I have wanted to go to Iceland since I was a young child due to how photographic it is.
+                  I took advantage of my study abroad and traveled around Europe taking pictures wherever I could. These are a few highlights from my trip to Iceland.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv game ux">
+              <img src="images/getagrip/getagrip.jpg">
+              <div class="text-block">
+                <h4>Get A Grip!</h4>
+                <p>I taught myself how to make a game called Get a Grip! in Unity.</p>
+                <label>Game Dev</label>
+                <label>UX/UI</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Get A Grip!</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>I published a game to the App Store using Unity and C#. My friend introduced me to rock climbing, and upon finding this pass-time, 
+                    I realized that I didn't recall of any popular games based around rock climbing. 
+                    So, during quarantine, I used my time to develop a rock climbing game.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Creator</div>
+                  <h4>Project</h4>
+                  <div class="text">Game Dev & UX/UI</div>
+                </div>
+              </div>
+  
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset2"><img src="images/getagrip/welcome.jpg"></div>
+                <div class="gallery-cell-offset2"><img src="images/getagrip/drag.jpg"></div>
+                <div class="gallery-cell-offset2"><img src="images/getagrip/learn.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/getagrip/unity1.jpg"></div>
+              </div>
+  
+              <div class="story">
+                <h4>The Story</h4>
+                <p>Over the course of 6 months of development, involving learning data structures 
+                  and creating all of the art and design, I completed the development of my app! 
+                  Upon completion of Get A Grip, I figured out how to publish it to the iOS App Store. 
+                  Although I only have under 200 downloads today, I realize that the project taught me many things about 
+                  development that I never would have learned without taking up this side project during quarantine.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/cali/cali1.jpeg">
+              <div class="text-block">
+                <h4>California Photos</h4>
+                <p>I took a set of photos in California.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>California Photos</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While on vacation in California, I took photos in San Francisco and Yosemite.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+  
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-wide"><img src="images/cali/cali1.jpeg"></div>
+                <div class="gallery-cell-offset"><img src="images/cali/cali14.jpeg"></div>
+                <div class="gallery-cell-offset"><img src="images/cali/cali18.jpeg"></div>
+                <div class="gallery-cell-offset"><img src="images/cali/cali19.jpeg"></div>
+                <div class="gallery-cell-offset"><img src="images/cali/cali2.jpeg"></div>
+                <div class="gallery-cell-offset"><img src="images/cali/cali21.jpeg"></div>
+                <div class="gallery-cell-wide"><img src="images/cali/cali29.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/cali/cali26.jpeg"></div>
+                <div class="gallery-cell-wide"><img src="images/cali/cali27.jpg"></div>
+              </div>
+
+              <div class="gallery-bottom js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset"><img src="images/cali/cali20.jpeg"></div>
+                <div class="gallery-cell-wide"><img src="images/cali/cali23.jpeg"></div>
+                <div class="gallery-cell-offset"><img src="images/cali/cali24.jpeg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/berlin/berlin.jpg">
+              <div class="text-block">
+                <h4>Berlin Photos</h4>
+                <p>I took a set of photos in Berlin.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>California Photos</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While studying abroad in Malmo, Sweden, I took a trip to Berlin.
+                    While there I took a river tour through downtown around Museum Island and adventured around town.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+  
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-wide"><img src="images/berlin/berlin.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/berlin/bridgeHole.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/berlin/building.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/berlin/building2.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/berlin/building3.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/berlin/hall.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/berlin/river.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/berlin/vintage.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv 3d">
+              <img src="images/3d/3DMoon.jpg">
+              <div class="text-block">
+                <h4>3D Renders</h4>
+                <p>I created some 3D Renders in my pass time.</p>
+                <label>3D Renders</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>3D Renders</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>I created a series of 3D renders using Cinema4D/Blender and Photoshop. </p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Creator</div>
+                  <h4>Project</h4>
+                  <div class="text">3D Renders</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-square"><img src="images/3d/3Dbuilding.jpg"></div>
+                <div class="gallery-cell-square"><img src="images/3d/3Dcharger.jpg"></div>
+                <div class="gallery-cell-square"><img src="images/3d/3DcloseOrb.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/3d/3Ddonut.jpg"></div>
+                <div class="gallery-cell-square"><img src="images/3d/3DHammer.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/3d/3Dkeys.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/3d/3DMoonwide.jpg"></div>
+                <div class="gallery-cell-square"><img src="images/3d/3Dorb.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/3d/3Dphone.JPG"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/london/towerBridge.jpg">
+              <div class="text-block">
+                <h4>London Photos</h4>
+                <p>I took a set of photos in London.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>London</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>While studying abroad in Malmo, Sweden, I helped organized a group of students to take a trip to Norway.
+                    While there we took a tour through the fjords and traveled through the cities of Bergen and Oslo.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-wide"><img src="images/london/tower.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/london/towerBridge.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/london/londonBridge.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/london/towerBridge2.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/london/bigben.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/london/shard.jpg"></div>
+                <div class="gallery-cell-offset"><img src="images/london/church.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv ux">
+              <img src="images/incards/dpyellow.jpg">
+              <div class="text-block">
+                <h4>Digital Postcards</h4>
+                <p>I am designing an app that shares users travels with a personal touch.</p>
+                <label>UX/UI</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="row">
+              <h3>Digital Postcards App</h3>
+              <div class="column left">
+                <h4>Project Overview</h4>
+                <p>This app allows users to send postcards to each other to share their travels with a personal touch.
+                  Users can use their own or other user's images to incorporate their travel experiences. More on this coming soon!</p>
+              </div>
+              <div class="column right">
+                <h4>Role</h4>
+                <div class="text">Lead UX</div>
+                <h4>Project</h4>
+                <div class="text">UX/UI Design</div>
+              </div>
+            </div>
+
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+              <div class="gallery-cell"><img src="images/incards/typeface.jpg"></div>
+              <div class="gallery-cell"><img src="images/incards/Digital Postcards.jpg"></div>
+              <div class="gallery-cell"><img src="images/incards/TextEffects.jpg"></div>
+            </div>
+
+            <div class="story">
+              <h4>The Story</h4>
+              <p>As Instagram focuses harder and harder on video content over photography, there's an increasingly larger 
+                gap in the market for an app where photographers can showcase their photos while sharing their travels with their friends.
+                Users will be able to find photos that capture their experiences while traveling or use their own to make their own postcard.</p>
+            </div>
+            
+          </div>
+
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv game 3d">
+              <img src="images/fc/Fingers Crossed 2.jpg">
+              <div class="text-block">
+                <h4>Fingers Crossed</h4>
+                <p>I helped create a board game in a school project.</p>
+                <label>Game Dev</label>
+                <label>3D Renders</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Fingers Crossed</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>As a part of a school project, I was tasked with creating a mock up for a board game. Below are the 
+                    rules and mock ups for the game!</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Lead UX</div>
+                  <h4>Project</h4>
+                  <div class="text">Game Dev 3D Renders</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset3"><img src="images/fc/Instuctions Front.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/fc/Instructions Back.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/fc/fcBoard.jpg"></div>
+                <div class="gallery-cell-square"><img src="images/fc/Fingers Crossed 2.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="trigger">
+            <div class="filterDiv photo">
+              <img src="images/blacksburg/bbspiral.jpg">
+              <div class="text-block">
+                <h4>Blacksburg Photos</h4>
+                <p>I took many pictures at my time at Virginia Tech.</p>
+                <label>Photography</label>
+              </div>
+            </div>
+          </button>
+          <!-- The Modal -->
+          <div class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="row">
+                <h3>Blacksburg Photos</h3>
+                <div class="column left">
+                  <h4>Project Overview</h4>
+                  <p>Before transfering to Georgia Tech, I studied at Virginia Tech and took 
+                     many pictures with the club, Spark, around Blacksburg.</p>
+                </div>
+                <div class="column right">
+                  <h4>Role</h4>
+                  <div class="text">Photographer</div>
+                  <h4>Project</h4>
+                  <div class="text">Photography</div>
+                </div>
+              </div>
+
+              <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bbgraduate.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bblane.jpeg"></div>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bblaneside.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bbpurple.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bbpylon.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/blacksburg/bbreflect.jpg"></div>
+                <div class="gallery-cell-wide"><img src="images/blacksburg/bbskyline.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bbspiral.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bbstars.jpg"></div>
+                <div class="gallery-cell-offset3"><img src="images/blacksburg/bbumbrella.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div id="about-wrapper" class="scroll-center" data-aos="fade-up">
+      <h3>About Me</h3>
+      <p>My name is Owen Kern. I am a fourth year Computational Media major at Georgia Tech. <br />I have been doing all
+        things design and development for years. <br />Contact me for your design related needs!</p>
+    </div>
+    <a id="footer-email-link" href="mailto:oskern1@gmail.com" target="_blank">email me</a>
+    <div id="footer-social-shop">
+      <a href="https://www.youtube.com/channel/UCDH3bJ43IALoOZLIyau8Cjg">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/okern20/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/bluebokehs">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.behance.net/owenkern">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/owen-kern/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
     </div>
   </div>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script type="text/javascript">
-    $(window).scroll(function(){
+    $(window).scroll(function () {
       var scroll = $(window).scrollTop();
       $('#header-background').css({
-        filter: "blur(" + (scroll/500) + "px)" + " opacity(" + (1/(scroll/40000)) + "%)"
+        filter: "blur(" + (scroll / 500) + "px)" + " opacity(" + (1 / (scroll / 40000)) + "%)"
       })
     })
-    $(window).load(function(){
-    $('#exampleModal').modal('show');
+    $(window).load(function () {
+      $('#exampleModal').modal('show');
     });
   </script>
   <script>
-    function on() {
-      document.getElementById("overlay").style.display = "block";
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Dropdown function
+    function changeFunc(t) {
+      filterSelection(t)
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("filter-container");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
     }
     
-    function off() {
-      document.getElementById("overlay").style.display = "none";
+  </script>
+  <script>
+    // Get the modal
+    const modals = document.getElementsByClassName("modal");
+      
+    // Get the button that opens the modal
+    const triggers = document.getElementsByClassName("trigger");
+    const triggerArray = Array.from(triggers).entries();
+      
+    // Get the <span> element that closes the modal
+    const closeButtons = document.getElementsByClassName("close");
+      
+    for (let [index, trigger] of triggerArray) {
+      const toggleModal = () => {
+        modals[index].classList.toggle("show-modal");
+      };
+      trigger.addEventListener("click", toggleModal);
+      closeButtons[index].addEventListener("click", toggleModal);
     }
-    </script>
-    <script>
-      const items = document.querySelectorAll('img');
-      const itemCount = items.length;
-      const nextItem = document.querySelector('.next');
-      const previousItem = document.querySelector('.previous');
-      let count = 0;
-
-      function showNextItem() {
-        items[count].classList.remove('active');
-
-        if(count < itemCount - 1) {
-          count++;
-        } else {
-          count = 0;
-        }
-
-        items[count].classList.add('active');
-        console.log(count);
-      }
-
-      function showPreviousItem() {
-        items[count].classList.remove('active');
-
-        if(count > 0) {
-          count--;
-        } else {
-          count = itemCount - 1;
-        }
-
-        items[count].classList.add('active');
-        console.log(count);
-      }
-
-      function keyPress(e) {
-        e = e || window.event;
-        
-        if (e.keyCode == '37') {
-          showPreviousItem();
-        } else if (e.keyCode == '39') {
-          showNextItem();
-        }
-      }
-
-      nextItem.addEventListener('click', showNextItem);
-      previousItem.addEventListener('click', showPreviousItem);
-      document.addEventListener('keydown', keyPress);
-    </script>
+  </script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
